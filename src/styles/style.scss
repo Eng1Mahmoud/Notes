@@ -1,0 +1,201 @@
+body,
+html,
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+// start nav
+.navbars {
+    box-shadow: 0px 0px 7px 0px white;
+
+    .navbar-brand {
+        font-weight: bold;
+
+        img {
+            width: 40px;
+            height: 40px
+        }
+
+        &:hover,
+        &:active {
+            color: rgba(0, 128, 0, 0.705);
+        }
+    }
+
+    .nav-link {
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: bold;
+
+        span {
+            font-size: 25px;
+            color: rgba(0, 128, 0, 0.705);
+            padding-left: 3px;
+        }
+    }
+
+    .nav-link:hover,
+    .nav-link:active {
+        color: rgba(0, 128, 0, 0.705);
+    }
+}
+// start hero
+.hero {
+    background-image: url('../images/1.jpg');
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 56px);
+    position: relative;
+
+    .alert {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        text-transform: capitalize;
+        color: black;
+        font-weight: bold;
+    }
+
+    .back {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.128);
+
+        .container {
+
+            .row {
+
+                .form {
+
+                    input,
+                    textarea {
+                        background: transparent;
+                        border:none;
+                        padding: 10px;
+                        font-size: 20px;
+                        box-shadow: 0px 0px 20px 3px rgba(58, 56, 56, 0.916);
+                        background: #f8f9fa86;
+                        text-transform: capitalize;
+
+                    }
+                    input:hover:focus,
+                    textarea:hover:focus{
+                        border:2px solid rgba(58, 56, 56, 0.916);
+                    }
+                    input::placeholder,
+                    textarea::placeholder {
+                        font-size: 20px;
+                        text-transform: capitalize;
+                    }
+
+                    input {
+                        height: 80px;
+                    }
+
+                    textarea {
+                        height: 200px;
+                    }
+
+                    .add {
+                        .btn-outline-success{
+                            border-width: 2px !important;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+// start all notes
+.fullHeight{
+    height:calc(100vh);
+}
+.allnotes {
+    background: #e9ecef;
+    ;
+
+    .note {
+        box-shadow: 0px 0px 7px 0px #e9ecef;
+        border: 2px solid #e9ecef;
+        position: relative;
+        background: #adb5bd;
+
+        h1 {
+            color: #f8f9fa;
+            border-bottom: 2px solid #f8f9fa;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .body {
+            p {
+                color: white;
+                font-size: 18px;
+                text-transform: capitalize;
+            }
+        }
+
+        .fa-trash-arrow-up {
+            font-size: 25px;
+            color: white;
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            cursor: pointer;
+        }
+    }
+
+    .empty {
+        height: calc(100vh - 56px);
+        text-transform: capitalize;
+    }
+}
+// start footer
+footer {
+    background: rgba(0, 0, 0, 0.838);
+    color: white;
+ 
+}
+// startb louding
+.louding {
+    background: #e9ecef;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    i {
+        font-size: 40px;
+        color: orange;
+        animation: routat 1s linear infinite reverse;
+        -webkit-animation: routat 1s linear infinite reverse;
+    }
+}
+/// start animation 
+@keyframes routat {
+    0% {
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+    }
+}
